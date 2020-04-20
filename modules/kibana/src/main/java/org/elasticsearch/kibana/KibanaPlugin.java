@@ -121,7 +121,8 @@ public class KibanaPlugin extends Plugin implements SystemIndexPlugin {
     public List<Setting<?>> getSettings() {
         return List.of(KIBANA_INDEX_NAMES_SETTING);
     }
-
+    
+    
     static class KibanaWrappedRestHandler extends BaseRestHandler.Wrapper {
 
         KibanaWrappedRestHandler(BaseRestHandler delegate) {
